@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+.digit-field {
+	border: 1px solid #000;
+	margin: 20px auto;
+	font-family: Consolas, monospace;
+}
+
+.digit-field td {
+	padding: 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	background: #777;	
+}
+.digit-field .full-cell {
+	background: #fff;
+}
+
+.full-cell:hover {
+	background: #eee;
+}
+
+.digit-field .active {
+	background: #ddd;
+	font-weight: bold;
+}
+
