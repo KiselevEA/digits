@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Цифры</title>
+    <title>Digit lines</title>
 	
     <!-- для корректного отображения новых тегов HTML5 в ранних браузерах семейства IE, следует добавить этот .js скрипт-->
     <!--[if lt IE 9]> 
@@ -75,17 +75,31 @@
         <table>
             <tr class='calculator'></tr>
         </table>
-        
-        <h2>Текущее число: <span class="current-digit"></span></h2>
-        <h2>Количество активных элементов в столбце: <span class="col-digits"></span></h2>
-        <h2>Количество активных элементов в строке: <span class="row-digits"></span></h2>
-        <button class='rewriteBtn'>Переписать таблицу</button>
+        <label>
+            <input class="remove-empty-rows" type="checkbox" value="true" name="remove-empty-rows" /> Remove empty rows
+        </label> 
+        <button class='rewrite-btn'>Rewrite</button>
+     
+        <h4>Move: <span class="moves">0</span></h4>
+        <h4 class='rules-headline'>Rules</h4>
+        <div class="rules">
+            Purpose of the game - obliterate all digits. Clicking on the digit you should find another one, which has equal digit or its sum should be equal 10. Second digit should be the next after first, or should be in the same position on row, but between first and second digit shouldn't be active cells. Your purpose - obliterate all digits with minimal moves. If you don't see any moves, click "Rewrite" - it copying active elements.
+        </div>
+        <div class="results">
+            <h4>Congratulations! You win!</h4>
+            <h4>Rewrites: <span class="rewrites"></span></h4>
+            <h4>Lines: <span class="lines"></span></h4>
+            <h4>Cells: <span class="cells"></span></h4>
+            <h4>Score: <span class="score"></span></h4>        
+        </div>
+
+
     </section>
 
 
     <footer role="contentinfo" class="container">
 
-        <h5 class="copyright">2015. All rights reserved.</h5>
+        <h5 class="copyright">2015. All rights reserved. <a href="november-web.ru">November-web</a></h5>
         
     </footer>
 

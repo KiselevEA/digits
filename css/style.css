@@ -2,19 +2,25 @@
 
 
 .digit-field {
-	border: 1px solid #000;
 	margin: 20px auto;
 	font-family: Consolas, monospace;
 }
 
 .digit-field td {
+	width: 31px;
+	height: 20px;
+    font-weight: bold;
+    text-align: center;
 	padding: 5px;
-	border: 1px solid #aaa;
 	cursor: pointer;
-	background: #777;	
+	border: 1px solid #ccc;		
 }
 .digit-field .full-cell {
 	background: #fff;
+	background: -moz-linear-gradient(#fff, #eee);
+	background: -ms-linear-gradient(#fff, #eee);
+	background: -webkit-linear-gradient(#fff, #eee);
+	background: linear-gradient(#fff, #eee);
 }
 
 .full-cell:hover {
@@ -26,3 +32,40 @@
 	font-weight: bold;
 }
 
+.obliterated {
+	color: #555;
+	background: #777;
+
+}
+
+.rewrite-btn {
+	display: block;
+	margin: 0 auto;
+}
+
+h4, label {
+	display: block;
+	width: 279px;
+	margin: 10px auto;
+}
+
+label input {
+	position: relative;
+	top: 2px;
+}
+
+.results {
+	display: none;
+}
+
+.rules-headline {
+	cursor: pointer;
+}
+
+.rules {
+	display: none;
+}
+
+.copyright {
+	text-align: center;
+}
