@@ -1,71 +1,161 @@
 @charset "utf-8";
 
 
+
+
+
 .digit-field {
+
 	margin: 20px auto;
+
 	font-family: Consolas, monospace;
+
 }
+
+
 
 .digit-field td {
+
 	width: 31px;
-	height: 20px;
+
+	height: 23px;
+	font-size: 21px;
+	line-height: 23px;
+	color: #CF000F;
+
     font-weight: bold;
+
     text-align: center;
-	padding: 5px;
+
+	padding: 2px;
+
 	cursor: pointer;
-	border: 1px solid #ccc;		
+
+	border: 1px solid #EF4836; /* ccc; */		
+
 }
+
 .digit-field .full-cell {
+
 	background: #fff;
+/*
 	background: -moz-linear-gradient(#fff, #eee);
+
 	background: -ms-linear-gradient(#fff, #eee);
+
 	background: -webkit-linear-gradient(#fff, #eee);
+
 	background: linear-gradient(#fff, #eee);
+
+	background: -moz-linear-gradient(#fff, #F1A9A0);
+
+	background: -ms-linear-gradient(#fff, #F1A9A0);
+
+	background: -webkit-linear-gradient(#fff, #F1A9A0);
+
+	background: linear-gradient(#fff, #F1A9A0);
+
+*/
+
 }
+
+
 
 .full-cell:hover {
-	background: #eee;
+
+	background: #F1A9A0; /*# eee; */
+
 }
+
+
 
 .digit-field .active {
-	background: #ddd;
+
+	background: #E08283; /* ddd; */
+
 	font-weight: bold;
+
 }
+
+
 
 .obliterated {
+
 	color: #555;
+	color: #C0392B !important;
 	background: #777;
+	background: #96281B;
+
 
 }
+
+
 
 .rewrite-btn {
+
 	display: block;
+
 	margin: 0 auto;
+
 }
+
+.restart-btn {
+
+	display: block;
+	margin: 20px auto 0 auto;
+
+}
+
+
 
 h4, label {
+
 	display: block;
+
 	width: 279px;
+
 	margin: 10px auto;
+
 }
+
+
 
 label input {
+
 	position: relative;
+
 	top: 2px;
+
 }
+
+
 
 .results {
+
 	display: none;
+
 }
+
+
 
 .rules-headline {
+
 	cursor: pointer;
+
 }
+
+
 
 .rules {
+
 	display: none;
+
 }
 
+
+
 .copyright {
+
 	text-align: center;
+
 }
